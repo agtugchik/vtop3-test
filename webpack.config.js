@@ -21,7 +21,27 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c)ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[local]',
+              },
+            },
+          },
+          ,
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg|svg|mp4)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
