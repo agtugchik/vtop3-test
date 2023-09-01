@@ -1,12 +1,11 @@
 import React from 'react';
+import Link from '../Link/Link';
 import cl from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
     <nav className={cl.navbar}>
-      <a className={cl.navbar_link} href="#">
-        About Us
-      </a>
+      <Link title="About Us" />
     </nav>
   );
 };

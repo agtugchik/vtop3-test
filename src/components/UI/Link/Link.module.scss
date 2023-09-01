@@ -1,0 +1,23 @@
+@use "../../../style/variables" as v;
+@import "../../../style/fonts";
+
+.link {
+  font-family: "Lexend", sans-serif;
+  color: v.$color-main-clean-white;
+  font-size: 16px;
+  transition: 0.3s;
+  &:hover {
+    color: v.$color-main-blue;
+    &::after {
+      width: 100%;
+    }
+  }
+  &::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: v.$color-main-blue;
+    transition: 300ms;
+  }
+}
