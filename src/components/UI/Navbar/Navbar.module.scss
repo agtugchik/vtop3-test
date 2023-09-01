@@ -1,5 +1,9 @@
 .navbar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-self: center;
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }
