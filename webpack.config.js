@@ -34,5 +34,12 @@ module.exports = {
       filename: '[name][contenthash].css',
     }),
   ],
+  devServer: {
+    port: 3000,
+    open: true,
+    hot: false,
+    liveReload: true,
+    historyApiFallback: true,
+  },
   mode: 'development',
 };

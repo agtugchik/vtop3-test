@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-    "target": "es2022",
+    "target": "esnext",
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "exactOptionalPropertyTypes": true,
@@ -11,7 +10,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "jsx": "react",
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,

@@ -1,6 +1,8 @@
+@use "./style/variables" as v;
 @import "./style/reset";
 
 #root {
   width: 100%;
   height: 100%;
+  background-color: v.$color-main-navy;
 }
