@@ -9,6 +9,7 @@
   border: 2px solid v.$color-additional-purple;
   align-items: center;
   transition: 0.3s;
+  gap: 8px  ;
   &:hover {
     & .link {
       color: v.$color-main-blue;

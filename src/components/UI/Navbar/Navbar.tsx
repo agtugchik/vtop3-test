@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className={cl.navbar}>
       <ul className={cl.container}>
         <li>
-          <Link title="About Us" />
+          <Link title="About us" />
         </li>
         <li>
           <Link title="Brands" />
@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link title="News" />
         </li>
         <li>
-          <Link title="Contact Us" />
+          <Link title="Contact us" />
         </li>
         <li>
           <Link title="Careers" />
