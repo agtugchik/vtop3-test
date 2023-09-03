@@ -6,3 +6,11 @@ $color-main-clean-white: #ffffff;
 $color-additional-purple: #9dadf2;
 
 $font-size-normal: 16px;
+$font-size-big: 24px;
+$font-size-subtitle: 32px;
+$font-size-title: 96px;
+
+@mixin font {
+  font-family: "Lexend", sans-serif;
+  color: $color-main-clean-white;
+}

@@ -1,0 +1,32 @@
+@use "../../style/variables" as v;
+@import "../../style/fonts";
+
+.titleBlock {
+  margin-top: 302px;
+  h1 {
+    @include v.font;
+    font-size: v.$font-size-title;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    span {
+      color: v.$color-main-blue;
+    }
+  }
+  p {
+    @include v.font;
+    font-size: v.$font-size-subtitle;
+    margin-bottom: 48px;
+    letter-spacing: 0.4px;
+  }
+  &_button {
+    width: 393px;
+    height: 72px;
+    border-radius: 48px;
+    align-items: center;
+    justify-content: center;
+    a {
+      font-size: v.$font-size-big;
+      text-align: center;
+    }
+  }
+}

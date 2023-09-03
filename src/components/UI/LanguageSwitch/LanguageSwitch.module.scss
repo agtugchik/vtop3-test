@@ -2,8 +2,7 @@
 @import "../../../style/fonts";
 
 .switcher {
-  font-family: "Lexend", sans-serif;
-  color: v.$color-main-clean-white;
+  @include v.font;
   font-size: v.$font-size-normal;
   &:hover {
     color: v.$color-main-blue;

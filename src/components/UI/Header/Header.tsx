@@ -14,7 +14,7 @@ const Header = () => {
       <ButtonType2 type="headerButtonType2">
         <Link title="LOG IN"></Link>
       </ButtonType2>
-      <Button type="headerButton">
+      <Button className={cl.header_button}>
         <Link title="SIGN UP"></Link>
       </Button>
     </header>
