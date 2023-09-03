@@ -3,4 +3,5 @@ export enum Language {
   EN = 'EN',
 }
 
-export const blogItemText = 'Payment methods: Skrill, Neteller, webmoney, Bank Transfer';
+export const blogItemText = 'Payment methods: Skrill, Neteller, webmoney, Bank transfer';
+export const blogItemDate = '10.02.2023';

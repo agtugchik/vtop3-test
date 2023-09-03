@@ -1,8 +1,25 @@
 @use "../../../style/variables" as v;
+@import "../../../style/fonts";
 
 .blogItem {
   height: 146px;
   width: 467px;
   border-radius: 196px;
   background-color: v.$color-main-deep;
+  margin-bottom: 16px;
+  padding: 16px 62px 12px 62px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h4 {
+    @include v.font;
+    font-size: v.$font-size-medium;
+  }
+  p {
+    font-family: "Futura PT", sans-serif;
+    color: v.$color-main-clean-white;
+    font-size: v.$font-size-small;
+    letter-spacing: 0.5px;
+  }
 }

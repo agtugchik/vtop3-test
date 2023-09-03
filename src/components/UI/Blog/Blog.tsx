@@ -1,13 +1,19 @@
 import React from 'react';
-import BlogItem from '../BlogItem/BlogItem';
+import SimpleBar from 'simplebar-react';
 import cl from './Blog.module.scss';
+import 'simplebar-react/dist/simplebar.min.css';
+import BlogItem from '../BlogItem/BlogItem';
 
 const Blog = () => {
   return (
     <div className={cl.blog}>
       <h2>BLOG</h2>
       <div className={cl.blog_area}>
-        <BlogItem />
+        <SimpleBar style={{ maxHeight: 571 }}>
+          {[...Array(10)].fill(BlogItem).map((x, i) => (
+            <p key={i}>{x()}</p>
+          ))}
+        </SimpleBar>
       </div>
     </div>
   );

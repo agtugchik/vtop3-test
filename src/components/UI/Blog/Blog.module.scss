@@ -6,6 +6,7 @@
   align-items: center;
   margin-top: 150px;
   &_area {
+    border-radius: 196px;
     margin-top: 20px;
     width: 531px;
     height: 595px;
@@ -13,6 +14,28 @@
     border-radius: 100px;
     background-color: rgba($color: #ffffff, $alpha: 0.12);
     padding: 24px;
+    overflow: hidden;
+    .simplebar-scrollable-y {
+      .simplebar-content {
+        &:last-child {
+          margin-bottom: 16px;
+        }
+      }
+      .simplebar-track {
+        background-color: rgba($color: #ffffff, $alpha: 0.12);
+        top: 72px;
+        right: -12px;
+        width: 8px;
+        height: 403px;
+        border-radius: 4px;
+        .simplebar-scrollbar:before {
+          background-color: v.$color-main-blue;
+          opacity: 1;
+          width: 8px;
+          left: 0;
+        }
+      }
+    }
   }
   h2 {
     @include v.font;
