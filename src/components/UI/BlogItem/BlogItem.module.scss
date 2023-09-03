@@ -1,0 +1,8 @@
+@use "../../../style/variables" as v;
+
+.blogItem {
+  height: 146px;
+  width: 467px;
+  border-radius: 196px;
+  background-color: v.$color-main-deep;
+}
