@@ -8,4 +8,15 @@
   width: 100vw;
   position: relative;
   box-shadow: 0px -50px 50px 50px rgba(17, 10, 29, 1);
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-bottom: 24px;
+  background-color: v.$color-main-deep;
+  display: grid;
+  align-content: end;
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }
