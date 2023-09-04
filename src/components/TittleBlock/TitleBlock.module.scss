@@ -2,6 +2,7 @@
 @import "../../style/fonts";
 
 .titleBlock {
+  z-index: 2;
   margin-top: 302px;
   h1 {
     @include v.font;

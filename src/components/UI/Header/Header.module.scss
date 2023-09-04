@@ -1,6 +1,7 @@
 @use "../../../style/variables" as v;
 
 .header {
+  z-index: 2;
   width: 100%;
   min-height: 96px;
   display: grid;
@@ -16,5 +17,3 @@
     margin-left: 14px;
   }
 }
-
-
