@@ -1,0 +1,39 @@
+@use "../../../style/variables" as v;
+@import "../../../style/fonts";
+
+.articlePage {
+  width: 100%;
+  min-height: calc(100vh - 242px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include v.font;
+  h2 {
+    font-size: v.$font-size-large;
+    text-align: center;
+  }
+  a {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+  }
+  &_date {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+  }
+  &_text {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: v.$font-size-medium;
+  }
+  &_button {
+    @include v.font;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
