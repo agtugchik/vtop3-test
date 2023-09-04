@@ -16,9 +16,12 @@
     padding: 24px;
     overflow: hidden;
     .simplebar-scrollable-y {
-      .simplebar-content {
-        &:last-child {
-          margin-bottom: 16px;
+      .simplebar-content-wrapper {
+        border-radius: 70px;
+        .simplebar-content {
+          &:last-child {
+            margin-bottom: 16px;
+          }
         }
       }
       .simplebar-track {
