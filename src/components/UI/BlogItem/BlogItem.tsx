@@ -4,10 +4,12 @@ import cl from './BlogItem.module.scss';
 
 const BlogItem = () => {
   return (
-    <div className={cl.blogItem}>
-      <h4>{blogItemText}</h4>
-      <p>{blogItemDate}</p>
-    </div>
+    <a href="">
+      <div className={cl.blogItem}>
+        <h4>{blogItemText}</h4>
+        <p>{blogItemDate}</p>
+      </div>
+    </a>
   );
 };
 

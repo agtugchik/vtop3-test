@@ -9,7 +9,7 @@ const SocialMedia = () => {
       <ul>
         {Icons.map((Icon, i) => (
           <li key={i}>
-            <a href="#">{Icon()}</a>
+            <a href="">{Icon()}</a>
           </li>
         ))}
       </ul>

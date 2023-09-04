@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.3s;
+  &:hover {
+    background-color: v.$color-main-blue;
+  }
   h4 {
     @include v.font;
     font-size: v.$font-size-medium;

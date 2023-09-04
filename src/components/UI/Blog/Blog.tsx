@@ -10,7 +10,7 @@ const Blog = () => {
       <h2>BLOG</h2>
       <div className={cl.blog_area}>
         <SimpleBar style={{ maxHeight: 571 }}>
-          {[...Array(10)].fill(BlogItem).map((x, i) => (
+          {[...Array(5)].fill(BlogItem).map((x, i) => (
             <p key={i}>{x()}</p>
           ))}
         </SimpleBar>

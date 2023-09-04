@@ -7,7 +7,7 @@ interface ILink {
 
 const Link: FC<ILink> = ({ title }) => {
   return (
-    <a className={cl.link} href="#">
+    <a className={cl.link} href="">
       {title}
     </a>
   );
