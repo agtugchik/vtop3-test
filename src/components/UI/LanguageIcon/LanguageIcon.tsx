@@ -1,8 +1,16 @@
 import React from 'react';
+import cl from './LanguageIcon.module.scss';
 
 const LanguageIcon = () => {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className={cl.LanguageIcon}
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M14.1692 3.71888C12.7989 1.84023 11.0012 0.775068 8.6355 0.5C9.74223 1.7817 10.5035 3.16875 10.9895 4.71966C12.0962 4.49141 13.1444 4.19294 14.1692 3.71888Z"
         fill="#9DADF2"

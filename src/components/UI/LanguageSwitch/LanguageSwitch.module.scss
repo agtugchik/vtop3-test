@@ -2,6 +2,9 @@
 @import "../../../style/fonts";
 
 .switcher {
+  @media (max-width: 1919px) {
+    display: none;
+  }
   @include v.font;
   font-size: v.$font-size-normal;
   &:hover {

@@ -1,4 +1,8 @@
 .app {
+  @media (max-width: 1919px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   width: 100%;
   height: 1265px;
   overflow: hidden;

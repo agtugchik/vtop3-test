@@ -2,6 +2,11 @@
 @import "../../../style/fonts";
 
 .buttonType2 {
+  @media (max-width: 1919px) {
+    width: 36px;
+    height: 36px;
+  }
+  position: relative;
   display: flex;
   flex-direction: row;
   border-radius: 24px;
@@ -9,7 +14,7 @@
   border: 2px solid v.$color-additional-purple;
   align-items: center;
   transition: 0.3s;
-  gap: 8px  ;
+  gap: 8px;
   &:hover {
     & .link {
       color: v.$color-main-blue;
