@@ -7,7 +7,7 @@ import cl from './LanguageSwitch.module.scss';
 const LanguageSwitch = () => {
   const [language, setLanguage] = useState<Language.EN | Language.RU>(Language.RU);
   return (
-    <ButtonType2 type="headerButtonType2" state={[language, setLanguage]}>
+    <ButtonType2 className={cl.switcherButton} state={[language, setLanguage]}>
       <LanguageIcon />
       <div className={cl.switcher}>{language}</div>
     </ButtonType2>

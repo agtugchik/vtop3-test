@@ -18,7 +18,7 @@ const Header = () => {
         <Fragment>
           <Navbar />
           <LanguageSwitch />
-          <ButtonType2 type="headerButtonType2">
+          <ButtonType2 className={cl.header_buttonType2}>
             <Link title="LOG IN"></Link>
           </ButtonType2>
           <Button className={cl.header_button}>
@@ -28,7 +28,17 @@ const Header = () => {
       ) : (
         <Fragment>
           <LanguageSwitch />
-          <Burger />
+          <Burger>
+            <Fragment>
+              <Navbar />
+              <ButtonType2 className={cl.header_buttonType2}>
+                <Link title="LOG IN"></Link>
+              </ButtonType2>
+              <Button className={cl.header_button}>
+                <Link title="SIGN UP"></Link>
+              </Button>
+            </Fragment>
+          </Burger>
         </Fragment>
       )}
     </header>

@@ -17,5 +17,8 @@
     display: block;
     background: v.$color-main-blue;
     transition: 0.3s;
+    @media (max-width: 1919px) {
+      display: none;
+    }
   }
 }

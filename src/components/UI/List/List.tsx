@@ -10,7 +10,9 @@ const List: FC<IList> = ({ className, titles }) => {
   return (
     <ul className={className}>
       {titles.map((title) => (
-        <Link key={title} title={title} />
+        <li key={title}>
+          <Link title={title} />
+        </li>
       ))}
     </ul>
   );

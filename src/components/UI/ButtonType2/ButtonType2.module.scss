@@ -15,6 +15,7 @@
   align-items: center;
   transition: 0.3s;
   gap: 8px;
+  z-index: 2;
   &:hover {
     & .link {
       color: v.$color-main-blue;
@@ -23,9 +24,4 @@
       }
     }
   }
-}
-
-.headerButtonType2 {
-  padding: 12px;
-  margin-left: 14px;
 }
