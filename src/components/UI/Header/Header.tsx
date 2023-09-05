@@ -6,6 +6,7 @@ import Link from '../Link/Link';
 import Navbar from '../Navbar/Navbar';
 import cl from './Header.module.scss';
 import useWindowSize from '../../../hooks/useWindowSize';
+import Burger from '../Burger/Burger';
 
 const Header = () => {
   const [width] = useWindowSize();
@@ -27,6 +28,7 @@ const Header = () => {
       ) : (
         <Fragment>
           <LanguageSwitch />
+          <Burger />
         </Fragment>
       )}
     </header>

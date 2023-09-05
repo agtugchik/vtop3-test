@@ -1,0 +1,49 @@
+@use "../../../style/variables" as v;
+
+.burger {
+  display: none;
+  @media (max-width: 1919px) {
+    z-index: 2;
+    margin-left: 11.5px;
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 14px;
+    &::before,
+    &::after {
+      transition: 0.3s;
+      content: "";
+      background: v.$color-main-clean-white;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0px;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    & > span {
+      transition: 0.3s;
+      position: absolute;
+      background: v.$color-main-clean-white;
+      width: 100%;
+      left: 0;
+      height: 2px;
+      top: 6px;
+    }
+    &.active::before {
+      transform: rotate(45deg);
+      top: 6px;
+    }
+    &.active::after {
+      transform: rotate(-45deg);
+      bottom: 6px;
+    }
+    &.active > span {
+      display: none;
+    }
+  }
+}

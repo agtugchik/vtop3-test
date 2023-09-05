@@ -5,6 +5,12 @@
     min-height: 56px;
     margin-top: 10px;
     border: 2px solid v.$color-main-blue;
+    position: fixed;
+    top: 0;
+    max-width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 19px;
   }
   z-index: 2;
   width: 100%;
