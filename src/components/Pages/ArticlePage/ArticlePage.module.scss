@@ -3,7 +3,7 @@
 
 .articlePage {
   width: 100%;
-  min-height: calc(100vh - 242px);
+  min-height: 1023px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -13,6 +13,7 @@
     text-align: center;
   }
   a {
+    z-index: 2;
     position: absolute;
     bottom: 100px;
     right: 50px;
