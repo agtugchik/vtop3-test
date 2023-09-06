@@ -73,6 +73,55 @@
       animation: slidedown 14s infinite linear;
     }
   }
+  @media (max-width: 1919px) {
+    height: 165px;
+    width: 100%;
+    margin: 0;
+    .container {
+      height: 165px;
+      width: 3000px;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      .firstLine,
+      .secondLine,
+      .thirdLine {
+        background-image: none;
+      }
+      .firstLine {
+        width: 3000px;
+        min-height: 50px;
+        background-image: url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png"),
+          url("../../assets/images/smallCrown.png"), url("../../assets/images/smallMBlue.png"),
+          url("../../assets/images/smallSoccerYellow.png"), url("../../assets/images/smallShield.png");
+
+        background-position: 0px 0px, 64px 0px, 128px 0px, 192px 0px, 256px 0px, 320px 0px, 384px 0px, 448px 0px,
+          512px 0px, 576px 0px, 640px 0px, 704px 0px, 768px 0px, 832px 0px, 896px 0px, 960px 0px, 1024px 0px, 1088px 0px,
+          1152px 0px, 1216px 0px, 1280px 0px, 1344px 0px, 1408px 0px, 1472px 0px, 1536px 0px, 1600px 0px, 1664px 0px,
+          1728px 0px, 1792px 0px, 1856px 0px, 1920px 0px, 1984px 0px, 2048px 0px, 2112px 0px, 2176px 0px, 2240px 0px,
+          2304px 0px, 2368px 0px, 2432px 0px, 2496px 0px, 2560px 0px, 2624px 0px, 2624px 0px;
+        animation: slideleft 4s infinite linear;
+      }
+    }
+  }
 }
 
 @keyframes slidedown {
@@ -92,5 +141,15 @@
 
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
   }
 }
