@@ -1,4 +1,8 @@
 .mainPage {
+  @media (max-width: 1919px) {
+    margin-top: 66px;
+    flex-direction: column;
+  }
   width: 100%;
   min-height: 1023px;
   display: flex;

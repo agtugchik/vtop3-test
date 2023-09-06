@@ -2,9 +2,21 @@
 @import "../../style/fonts";
 
 .titleBlock {
+  @media (max-width: 1919px) {
+    margin-top: 70px;
+    align-self: center;
+  }
   z-index: 2;
   margin-top: 302px;
   h1 {
+    @media (max-width: 1919px) {
+      font-size: 46px;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 50px;
+      margin-bottom: 13px;
+    }
     @include v.font;
     font-size: v.$font-size-title;
     margin-bottom: 24px;
@@ -14,12 +26,25 @@
     }
   }
   p {
+    @media (max-width: 1919px) {
+      font-size: 20px;
+      text-align: center;
+      line-height: 26px;
+      letter-spacing: 0px;
+      margin-bottom: 23px;
+    }
     @include v.font;
     font-size: v.$font-size-subtitle;
     margin-bottom: 48px;
     letter-spacing: 0.4px;
   }
   &_button {
+    @media (max-width: 1919px) {
+      width: 300px;
+      height: 53px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     width: 393px;
     height: 72px;
     border-radius: 48px;
@@ -28,6 +53,9 @@
     a {
       font-size: v.$font-size-medium;
       text-align: center;
+      @media (max-width: 1919px) {
+        font-size: 18px;
+      }
     }
   }
 }

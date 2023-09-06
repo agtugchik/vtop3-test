@@ -53,26 +53,27 @@
   opacity: 0;
   transition: 0.3s;
   @media (max-width: 1919px) {
+    background-color: v.$color-main-navy;
     z-index: 1;
-    display: inline-block;
+    display: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: red;
     z-index: 1;
     &.active {
       opacity: 1;
+      display: inline-block;
     }
-    // .border {
-    //   min-height: 56px;
-    //   margin-top: 10px;
-    //   border: 2px solid v.$color-main-blue;
-    //   max-width: calc(100% - 20px);
-    //   margin-left: 10px;
-    //   margin-right: 10px;
-    //   border-radius: 64px;
-    // }
+    .border {
+      min-height: 56px;
+      margin-top: 10px;
+      border: 2px solid v.$color-main-blue;
+      max-width: calc(100% - 20px);
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 64px;
+    }
   }
 }

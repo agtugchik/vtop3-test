@@ -16,7 +16,10 @@ const Burger: FC<IBurger> = ({ children }) => {
       >
         <span />
       </div>
-      <div className={isActive ? `${cl.menu} ${cl.active}` : cl.menu}>{children}</div>
+      <div className={isActive ? `${cl.menu} ${cl.active}` : cl.menu}>
+        <div className={cl.border}></div>
+        {children}
+      </div>
     </Fragment>
   );
 };
