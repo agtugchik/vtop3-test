@@ -7,6 +7,11 @@
   height: 100%;
   background-color: v.$color-main-navy;
   position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   &:before {
     content: url("./assets/svg/secondGradient.svg");
     position: absolute;
