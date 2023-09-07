@@ -4,6 +4,7 @@ import cl from './Blog.module.scss';
 import 'simplebar-react/dist/simplebar.min.css';
 import BlogItem from '../BlogItem/BlogItem';
 import { blogItems } from '../../../constants';
+import useWindowSize from '../../../hooks/useWindowSize';
 
 const propsWithoutLink = {
   title: blogItems[0].title,
@@ -13,11 +14,13 @@ const propsWithoutLink = {
 const propsWithLink = { ...propsWithoutLink, link: '/article/0' };
 
 const Blog = () => {
+  const [, height] = useWindowSize();
+
   return (
     <div className={cl.blog}>
       <h2>BLOG</h2>
       <div className={cl.blog_area}>
-        <SimpleBar style={{ maxHeight: 571 }}>
+        <SimpleBar style={{ maxHeight: height > 1919 ? 571 : 401 }}>
           {[...Array(5)]
             .fill(BlogItem)
             .map((x, i) =>

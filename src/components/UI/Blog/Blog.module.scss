@@ -45,4 +45,46 @@
     @include v.font;
     font-size: v.$font-size-large;
   }
+  @media (max-width: 1919px) {
+    align-self: center;
+    margin-top: 32px;
+    width: 300px;
+    height: 479px;
+    h2 {
+      font-size: v.$font-size-subtitle;
+      line-height: 40px;
+    }
+    &_area {
+      width: 300px;
+      border-radius: 50px;
+      padding: 10px;
+      padding-top: 8px;
+      padding-right: 14px;
+    }
+    .simplebar-scrollable-y {
+      .simplebar-content-wrapper {
+        border-radius: 35px;
+        .simplebar-content {
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .simplebar-track {
+        background-color: rgba($color: #ffffff, $alpha: 0.12);
+        top: 45px;
+        right: -12px;
+        width: 4px;
+        height: 403px;
+        border-radius: 4px;
+        height: 301px;
+        .simplebar-scrollbar:before {
+          background-color: v.$color-main-blue;
+          opacity: 1;
+          width: 4px;
+          left: 0;
+        }
+      }
+    }
+  }
 }

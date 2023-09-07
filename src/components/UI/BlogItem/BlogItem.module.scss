@@ -26,4 +26,21 @@
     font-size: v.$font-size-small;
     letter-spacing: 0.5px;
   }
+  @media (max-width: 1919px) {
+    width: 270px;
+    height: 112px;
+    border-radius: 40px;
+    padding: 15px 35px 15px 30px;
+    margin-bottom: 10px;
+    h4 {
+      line-height: 20px;
+      font-size: v.$font-size-normal;
+      display: block;
+      text-align: start;
+    }
+    p {
+      line-height: 16px;
+      font-size: 14px;
+    }
+  }
 }

@@ -10,7 +10,6 @@ import Burger from '../Burger/Burger';
 
 const Header = () => {
   const [width] = useWindowSize();
-  if (width > 1919) console.log(width);
 
   return (
     <header className={cl.header}>
