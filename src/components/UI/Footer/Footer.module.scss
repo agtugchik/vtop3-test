@@ -29,4 +29,28 @@
     flex-direction: row;
     gap: 40px;
   }
+  @media (max-width: 1919px) {
+    border: 2px solid v.$color-main-blue;
+    border-bottom: none;
+    border-radius: 50px 50px 0 0;
+    margin-top: 120px;
+    height: 233px;
+    align-items: start;
+    padding: 20px 18px 30px 18px;
+    flex-direction: column;
+    .container {
+      text-align: start;
+      flex-direction: column;
+      display: block;
+      width: 100%;
+      gap: 0px;
+      li {
+        a {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
 }

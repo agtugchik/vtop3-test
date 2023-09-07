@@ -36,4 +36,25 @@
       }
     }
   }
+  @media (max-width: 1919px) {
+    align-items: start;
+    h3 {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    ul {
+      li {
+        width: 27px;
+        height: 27px;
+        a {
+          svg {
+            width: 27px;
+            height: 27px;
+          }
+        }
+      }
+    }
+  }
 }

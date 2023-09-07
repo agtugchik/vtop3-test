@@ -1,7 +1,7 @@
 import Header from '../UI/Header/Header';
 import React from 'react';
 import cl from './App.module.scss';
-// import Footer from '../UI/Footer/Footer';
+import Footer from '../UI/Footer/Footer';
 import AppRouter from '../AppRouter/AppRouter';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     <div className={cl.app}>
       <Header />
       <AppRouter />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
