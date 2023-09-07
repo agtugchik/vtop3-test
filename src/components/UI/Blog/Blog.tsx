@@ -20,7 +20,7 @@ const Blog = () => {
     <div className={cl.blog}>
       <h2>BLOG</h2>
       <div className={cl.blog_area}>
-        <SimpleBar style={{ maxHeight: height > 1919 ? 571 : 401 }}>
+        <SimpleBar style={{ maxHeight: height > 1919 ? 571 : 419 }}>
           {[...Array(5)]
             .fill(BlogItem)
             .map((x, i) =>
