@@ -7,11 +7,6 @@
   height: 100%;
   background-color: v.$color-main-navy;
   position: relative;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-  // -ms-overflow-style: none;
-  // scrollbar-width: none;
   &:before {
     content: url("./assets/svg/secondGradient.svg");
     position: absolute;
@@ -24,6 +19,11 @@
   @media (max-width: 1919px) {
     &:before {
       content: "";
+    }
+  }
+  @media (max-width: 320px) {
+    &:before {
+      content: url("./assets/svg/secondGradientSmall.svg");
     }
   }
 }
