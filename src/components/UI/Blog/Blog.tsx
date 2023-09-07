@@ -14,13 +14,13 @@ const propsWithoutLink = {
 const propsWithLink = { ...propsWithoutLink, link: '/article/0' };
 
 const Blog = () => {
-  const [, height] = useWindowSize();
+  const [width] = useWindowSize();
 
   return (
     <div className={cl.blog}>
       <h2>BLOG</h2>
       <div className={cl.blog_area}>
-        <SimpleBar style={{ maxHeight: height > 1919 ? 571 : 419 }}>
+        <SimpleBar style={{ maxHeight: width > 1919 ? 571 : 419 }}>
           {[...Array(5)]
             .fill(BlogItem)
             .map((x, i) =>
